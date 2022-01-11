@@ -1,0 +1,28 @@
+main{
+    margin: 5px;
+    padding: 5px;
+    .section1{
+        background-color: $color_celeste;
+        .parrafo1{
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: $color_blanco;
+        }
+    }
+    .section2{
+        background-color: $color_rojo;
+        .parrafo2{
+            font-size: 30px;
+            font-family: cursive;
+            color: $color_amarillo;
+        }
+    }
+    .section3{
+        background-color: $color_celeste;
+        .parrafo3{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            color: $color_blanco;
+        }
+    }
+}
