@@ -1,28 +1,48 @@
-main{
+@mixin size-family {
+    font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+// main
+.main{
     margin: 5px;
     padding: 5px;
     .section1{
         background-color: $color_celeste;
         .parrafo1{
-            font-size: 30px;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            @include size-family;
             color: $color_blanco;
         }
     }
     .section2{
         background-color: $color_rojo;
         .parrafo2{
-            font-size: 30px;
-            font-family: cursive;
+            @include size-family;
             color: $color_amarillo;
         }
     }
     .section3{
         background-color: $color_celeste;
         .parrafo3{
-            font-size: 30px;
-            font-family: 'Times New Roman', Times, serif;
+            @include size-family;
             color: $color_blanco;
         }
+    }
+}
+
+
+.caja{
+    width: 70%;
+    background-color: $color_celeste;
+    padding: 0.5rem;
+    margin: 1rem;
+    display: flex;
+    .cajaRoja{
+        @extend .caja;
+        border: 5px $color_rojo;
+        background-color: $color_amarillo;  
+    }
+    .cajaNegra{
+        @extend .caja;
+        border: 3px $color_negro;
     }
 }
